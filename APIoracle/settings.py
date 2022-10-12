@@ -52,8 +52,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
-    "http://linux-opensuse:3000",
+    "http://localhost:3000"
 ]
 
 ROOT_URLCONF = 'APIoracle.urls'
@@ -79,27 +78,27 @@ WSGI_APPLICATION = 'APIoracle.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#     }
-# }
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.oracle',
-        'NAME': 'o19cdb1',
-        'USER': 'djangouser',
-        'PASSWORD': 'djangoapp',
-        'HOST': '192.168.56.4',
-        'PORT': '1521',
-    },
-    'OPTIONS': {
-        'use_returning_into': False,
-    },
-
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.oracle',
+#         'NAME': '',
+#         'USER': '',
+#         'PASSWORD': '',
+#         'HOST': '',
+#         'PORT': '1521',
+#     },
+#     'OPTIONS': {
+#         'use_returning_into': False,
+#     },
+
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
