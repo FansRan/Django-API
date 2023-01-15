@@ -121,7 +121,7 @@ Start the development server
   python3 manage.py runserver
 ```
 
-The server listen on port 80
+The server listen on port 8000
 
 <!-- Contact -->
 
